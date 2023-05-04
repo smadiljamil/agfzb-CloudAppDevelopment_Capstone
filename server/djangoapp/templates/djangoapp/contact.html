@@ -14,10 +14,9 @@
 </head>
 
     <body>
-        
         <div class="container py-3">
     <!--Add a nav bar here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Best Cars</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,19 +24,35 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'djangoapp:index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'djangoapp:about' %}">About Us</a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'djangoapp:about' %}">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'djangoapp:contact' %}">Contact Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
         </div>
-      </nav>
-    <!--Add a dealer table here -->
+        </nav>
+        <div class="p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Contact Us</h1>
+            <div>
+                <div class="card bg-light mb-3">
+                    <div class="card-header text-black text-uppercase"><i class="fa fa-home"></i> Address</div>
+                    <div class="card-body">
+                        <p>No 62/64 3rd Floor</p>
+                        <p>Zaveri House</p>
+                        <p>Mumbai, Maharashtra,400007</p>
+                        <p>Email : email@example.com</p>
+                        <p>Tel. +91 12 56 11 51 84</p>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
     </div>
     </body>
 
